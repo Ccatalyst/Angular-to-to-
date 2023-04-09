@@ -1,1 +1,5 @@
-<p>list-container works!</p>
+<section for="name">
+  <p>{{ toDo.name }}</p>
+  <p>{{ toDo.creationDate | date : "M/d/yyyy" }}</p>
+  <input type="checkbox" [(ngModel)]="toDo.isDone" />
+</section>
